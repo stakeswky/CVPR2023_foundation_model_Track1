@@ -1,4 +1,5 @@
 export CUDA_VISIBLE_DEVICES=0
+export FASTREID_DATASETS=data/datasets
 
 # kill -9 $(lsof -t /dev/nvidia*)
 # sleep 1s
