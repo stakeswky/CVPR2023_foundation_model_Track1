@@ -1,5 +1,5 @@
 export CUDA_VISIBLE_DEVICES=0
-export FASTREID_DATASETS=/content/CVPR2023_foundation_model_Track1/OneForAll/data/datasets
+export FASTREID_DATASETS=data/datasets
 
 # kill -9 $(lsof -t /dev/nvidia*)
 # sleep 1s
