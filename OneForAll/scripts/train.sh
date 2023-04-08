@@ -1,4 +1,4 @@
-export CUDA_VISIBLE_DEVICES=0,1,2,3
+export CUDA_VISIBLE_DEVICES=0
 
 # kill -9 $(lsof -t /dev/nvidia*)
 # sleep 1s
@@ -7,6 +7,6 @@ export CUDA_VISIBLE_DEVICES=0,1,2,3
 
 config=configs/vitbase_jointtraining_config.py
 
-python3 -m paddle.distributed.launch --log_dir=./logs/vitbase_jointraining --gpus="0,1,2,3"  tools/ufo_train.py --config-file ${config} #--resume 
+python3 -m paddle.distributed.launch --log_dir=./logs/vitbase_jointraining --gpus="0"  tools/ufo_train.py --config-file ${config} #--resume 
 
 
